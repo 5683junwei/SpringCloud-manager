@@ -1,0 +1,13 @@
+#productImg{
+	width: 100px;
+	height: 80px;
+}
+table tr td{
+	vertical-align: middle;
+}
+.price{
+	font-size: 25px;
+	font-weight: bold;
+	color: red;
+	float: right;
+}

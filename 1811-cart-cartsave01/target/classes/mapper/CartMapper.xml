@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.money.cart.mapper.CartMapper">
+   <insert id="addCart" parameterType="Cart">
+		insert into m_cart (
+		user_id,
+		product_id,
+		product_price,
+		product_name,
+		product_image,
+		num) values(
+		#{userId},
+		#{productId},
+		#{productPrice},
+		#{productName},
+		#{productImage},
+		#{num}
+		)
+	</insert>
+	 <select id="queryOne" parameterType="Cart" resultType="Cart">
+		select * from m_cart where user_id=#{userId} 
+		and product_id=#{productId}
+	</select>
+	 <select id="findProductById" parameterType="string" resultType="AiProduct">
+	select * from m_aiproduct where ai_id=#{id}
+	</select>
+	 <update id="updateNum" parameterType="Cart">
+		update m_cart set num=#{num},product_price=#{productPrice} where user_id=#{userId} 
+		and product_id=#{productId}
+	</update>  
+</mapper> 
+
+
+
+
+
+
+
+
+
+
+
+

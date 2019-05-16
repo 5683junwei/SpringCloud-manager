@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.money.order.mapper.OrderMapper">
+ 
+
+    <select id="queryOrder" parameterType="String" resultType="Order">
+		select * from m_order where user_id=#{userId};
+	</select>
+
+    <update id="updatePay" parameterType="Order">
+		update m_order set pay_state=#{payState} where user_id=#{userId} 
+	</update>
+	
+</mapper> 
+
+
+
+
+
+
+
+
+
+
+
+

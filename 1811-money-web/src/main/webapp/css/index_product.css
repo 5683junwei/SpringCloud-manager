@@ -1,0 +1,74 @@
+#product{
+    width: 500px;
+    height: 400px;
+    text-align: center;
+    box-shadow: gray 0px 1px 10px;
+    border-radius: 50px;
+}
+#product .content p:nth-child(1){
+    font-size: 30px;
+    padding-top: 20px;
+    font-weight: bold;
+}
+#product .content p:nth-child(2){
+    font-size: 16px;
+    color: grey;
+}
+#product .content p:nth-child(3){
+    margin-top: 20px;
+    font-size: 35px;
+    color: red;
+    font-weight: bold;
+}
+#product .content del{
+    color: red;
+    font-size: 16px;
+}
+#product .content p:nth-child(5){
+    font-size: 15px;
+    color: grey;
+}
+#product .content ul{
+    width: 450px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+#product .content ul li{
+    width: 100px;
+    margin-left: 10px;
+    float: left;
+    color: red;
+    border: 1px solid red;
+    border-radius: 10px;
+    padding: 5px;
+    font-weight: bold;
+}
+#product .content #btn{
+    clear: both;
+    width: 470px;
+    margin: 0 auto;
+    margin-top: 90px;
+    background: #0016cc;
+    height: 45px;
+    border-radius: 50px;
+}
+#product .content #btn span:nth-child(1) a{
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 45px;
+    margin-left: 70px;
+}
+#product .content #btn span:nth-child(2){
+    margin-top: 8px;
+    margin-right: 20px;
+    float: right;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: white;
+    color: #0016cc;
+    border-radius: 50%;
+    font-size: 20px;
+    font-weight: bold;
+}

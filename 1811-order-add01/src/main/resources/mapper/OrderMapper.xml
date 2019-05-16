@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.money.order.mapper.OrderMapper">
+	<select id="queryById" parameterType="String" resultType="Cart">
+	
+	select * from m_cart where user_id=#{userId};
+	</select>
+	
+	<insert id="saveOrder" parameterType="Order">	
+		INSERT INTO m_order
+		(user_id,product_id,product_img,product_price,num,pay_state,order_date,product_name) 
+		VALUES 
+		(
+		#{userId},
+		#{productId},
+		#{productImg},
+		#{productPrice},
+		#{num},
+		#{payState},
+		#{orderDate},
+		#{productName}
+		);	
+	</insert>
+</mapper> 
+
+
+
+
+
+
+
+
+
+
+
+

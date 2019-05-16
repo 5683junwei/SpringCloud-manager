@@ -1,0 +1,39 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <artifactId>1811-money-web</artifactId>
+  <packaging>jar</packaging>
+  <name>1811-money-web Maven Webapp</name>
+  <url>http://maven.apache.org</url>
+
+  <build>
+    <finalName>1811-money-web</finalName>
+  </build>
+  <properties>
+        <java.version>1.8</java.version>
+    </properties>
+  <dependencies>
+  <dependency>
+  	<groupId>com.money</groupId>
+  	<artifactId>1811-money-common</artifactId>
+  	<version>0.0.1-SNAPSHOT</version>
+  </dependency>
+  <dependency>
+    <groupId>org.apache.logging.log4j</groupId>
+    <artifactId>log4j-core</artifactId>
+    <version>2.10.0</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-api -->
+<dependency>
+    <groupId>org.apache.logging.log4j</groupId>
+    <artifactId>log4j-api</artifactId>
+    <version>2.10.0</version>
+</dependency>
+
+  </dependencies>  
+  <parent>
+  	<groupId>com.money</groupId>
+  	<artifactId>1811-money-parent</artifactId>
+  	<version>0.0.1-SNAPSHOT</version>
+  </parent>
+</project>

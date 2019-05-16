@@ -1,0 +1,87 @@
+/*登录页面样式表*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url("../../images/login_bg.png") no-repeat;
+    background-size: 100% 100%;
+}
+
+#content {
+    margin-top: 250px;
+}
+
+#content h1 {
+    font-size: 60px;
+    font-family: 方正胖娃繁体, serif;
+    color: #fff;
+}
+
+.login {
+    width: 500px;
+    height: 400px;
+    background: rgba(255, 255, 255, 0.3);
+    margin: 50px auto;
+    border-radius: 30px;
+    padding-top: 15px;
+    box-shadow: gray 0px 1px 10px;
+}
+
+.form-content {
+    width: 300px;
+    height: 50px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: gray 0px 1px 10px;
+}
+
+.form-content:active {
+    border: 1px solid #3d9bec;
+}
+
+.form-content .form-css {
+    border: none;
+}
+
+.form-content i {
+    font-size: 24px;
+    padding-right: 20px;
+    vertical-align: middle;
+}
+
+.btn-content {
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.btn-content input {
+    width: 130px;
+    height: 50px;
+    border-radius: 10px;
+    box-shadow: gray 0px 1px 10px;
+}
+
+.btn-content input {
+    background: #3d9bec;
+    color: #fff;
+}
+
+.btn-content input:hover {
+    color: #fff;
+}
+
+#vercode {
+    cursor: pointer;
+}
+
+.vercode-content {
+    display: inline-block;
+    width: 40px;
+}
